@@ -28,10 +28,10 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
 
   final List<Map<String, dynamic>> _allUsers = [
-    {"id": 1, "name": "First movie", "age": 2019},
-    {"id": 2, "name": "Second movie", "age": 2020},
-    {"id": 3, "name": "Third movie", "age": 2021},
-    {"id": 4, "name": "Forth movie", "age": 2022},
+    {"id": 1, "name": "Shawshank Redemption", "age": 1994, "genre": "Drama"},
+    {"id": 2, "name": "Leon", "age": 1994, "genre": "Drama"},
+    {"id": 3, "name": "Call Me By Your Name", "age": 2017, "genre": "Drama"},
+    {"id": 4, "name": "Coco", "age": 2017, "genre": "Animation"},
   ];
 
   List<Map<String, dynamic>> _foundUsers = [];
