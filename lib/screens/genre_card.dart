@@ -5,7 +5,7 @@ import 'constants.dart';
 class GenreCard extends StatelessWidget {
   final String genre;
 
-  const GenreCard({Key key, this.genre}) : super(key: key);
+  const GenreCard({Key? key, required this.genre}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Container(

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'registr_screen.dart';
 
 class LoginScreen extends StatelessWidget {
-  const LoginScreen({Key key}) : super(key: key);
+  const LoginScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

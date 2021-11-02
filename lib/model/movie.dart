@@ -8,13 +8,13 @@ class Movie {
   final String duration;
 
   Movie({
-    this.id,
-    this.title,
-    this.imageUrl,
-    this.description,
-    this.rating,
-    this.year,
-    this.duration,
+    required this.id,
+    required this.title,
+    required this.imageUrl,
+    required this.description,
+    required this.rating,
+    required this.year,
+    required this.duration,
   });
 }
 

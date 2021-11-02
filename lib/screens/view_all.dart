@@ -10,7 +10,7 @@ import '../widget/vertical_list_item.dart';
 import '../widget/horizontal_list_item.dart';
 
 class ViewAllScreen extends StatelessWidget {
-  const ViewAllScreen({Key key}) : super(key: key);
+  const ViewAllScreen({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     body:
