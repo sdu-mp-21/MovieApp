@@ -1,4 +1,5 @@
-  Movie({
+ class Movie{
+   Movie({
     this.bannerUrl,
     this.posterUrl,
     this.title,
@@ -7,15 +8,16 @@
     this.storyline,
     this.actors,
   });
-
-  final String? bannerUrl;
-  final String? posterUrl;
-  final String? title;
-  final double? rating;
-  final List<String>? genre;
-  final String? storyline;
-  final List<Actor>? actors;
+  late final String? bannerUrl;
+  late final String? posterUrl;
+  late final String? title;
+  late final double? rating;
+  late final List<String>? genre;
+  late final String? storyline;
+  late final List<Actor>? actors;
 }
+
+
 
 class Actor {
   Actor({
