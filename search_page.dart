@@ -107,6 +107,21 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
       ),
+      
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: 0;
+        items: [
+          icon: Icon(Icons.home),
+          title: Text('Home'),
+          backgroundColor: Colors.Black
+          ),
+        ]
     );
+    
+    
+
+    
+    
   }
 }
+
