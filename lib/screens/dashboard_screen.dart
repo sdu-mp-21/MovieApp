@@ -4,6 +4,7 @@ import 'package:flutter_movie_app/screens/home_screen.dart';
 
 import '../model/movie.dart';
 import 'login_screen.dart';
+import 'ViewAllScreen.dart';
 import 'search_page.dart';
 import 'genre.dart';
 
@@ -76,7 +77,13 @@ class DashboardScreen extends StatelessWidget {
                   ),
                   FlatButton(
                     child: Text('View All'),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const ViewAllScreen()),
+                      );
+                    },
                   ),
                 ],
               ),
@@ -106,7 +113,13 @@ class DashboardScreen extends StatelessWidget {
                   ),
                   FlatButton(
                     child: Text('View All'),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const ViewAllScreen()),
+                      );
+                    },
                   ),
                 ],
               ),
@@ -137,7 +150,13 @@ class DashboardScreen extends StatelessWidget {
                   ),
                   FlatButton(
                     child: Text('View All'),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const ViewAllScreen()),
+                      );
+                    },
                   ),
                 ],
               ),
