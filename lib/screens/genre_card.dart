@@ -5,7 +5,7 @@ import 'constants.dart';
 class GenreCard extends StatelessWidget {
   final String genre;
 
-  const GenreCard({Key? key, required this.genre}) : super(key: key);
+  const GenreCard({Key key, this.genre}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -16,7 +16,7 @@ class GenreCard extends StatelessWidget {
         vertical: kDefaultPadding / 4, // 5 padding top and bottom
       ),
       decoration: BoxDecoration(
-        border: Border.all(color: Colors.black26),
+        border: Border.all(color: Colors.black),
         borderRadius: BorderRadius.circular(20),
       ),
       child: Text(

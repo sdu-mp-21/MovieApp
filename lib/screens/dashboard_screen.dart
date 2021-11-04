@@ -1,7 +1,6 @@
-import 'dart:io';
-
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_movie_app/screens/login_screen.dart';
+import 'package:flutter_movie_app/screens/home_screen.dart';
 
 import '../model/movie.dart';
 import 'login_screen.dart';
@@ -43,6 +42,20 @@ class DashboardScreen extends StatelessWidget {
                   color: Colors.white,
                 ),
               )),
+          TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const HomeScreen()),
+                );
+              },
+              child: Text(
+                'Home',
+                style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white),
+              ))
         ],
       ),
       body: SingleChildScrollView(

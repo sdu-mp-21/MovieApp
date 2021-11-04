@@ -3,12 +3,10 @@ import 'package:flutter/material.dart';
 class MovieDetailsScreen extends StatelessWidget {
   static const routeName = '/movie-details';
 
-  const MovieDetailsScreen({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     final routeArgs =
-        ModalRoute.of(context)!.settings.arguments as Map<String, String>;
+        ModalRoute.of(context).settings.arguments as Map<String, String>;
     final id = routeArgs['id'];
     final rating = routeArgs['rating'];
 
@@ -48,19 +46,19 @@ class MovieDetailsScreen extends StatelessWidget {
                 ),
               ),
             ),
-            const SizedBox(
+            SizedBox(
               height: 20,
             ),
             Text(
               routeArgs['title'],
-              style: const TextStyle(
+              style: TextStyle(
                 fontSize: 28,
                 fontWeight: FontWeight.bold,
                 letterSpacing: 2.5,
               ),
               textAlign: TextAlign.center,
             ),
-            const SizedBox(
+            SizedBox(
               height: 20,
             ),
             Row(

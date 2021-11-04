@@ -2,14 +2,18 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 import '../model/movie.dart';
+import 'login_screen.dart';
+import 'search_page.dart';
 
+import '../widget/top_rated_list_item.dart';
 import '../widget/vertical_list_item.dart';
 import '../widget/horizontal_list_item.dart';
 
 class ViewAllScreen extends StatelessWidget {
-  const ViewAllScreen({Key? key}) : super(key: key);
+  const ViewAllScreen({Key key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
+    body:
     SingleChildScrollView(
       child: Column(
         children: <Widget>[
@@ -21,7 +25,7 @@ class ViewAllScreen extends StatelessWidget {
               itemBuilder: (ctx, i) => HorizontalListItem(i),
             ),
           ),
-          const SizedBox(
+          SizedBox(
             height: 30,
           ),
           Padding(
@@ -29,7 +33,7 @@ class ViewAllScreen extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
-                const Text(
+                Text(
                   'Best of 2019',
                   style: TextStyle(
                     fontSize: 18,

@@ -1,55 +1,31 @@
 // main.dart
 import 'package:flutter/material.dart';
 
-// void main() {
-//   runApp(const MyApp());
-// }
-
-// class MyApp extends StatelessWidget {
-//   const MyApp({Key key}) : super(key: key);
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return const MaterialApp(
-//       // Remove the debug banner
-//       debugShowCheckedModeBanner: false,
-//       title: 'Popcorn',
-//       home: HomePage(),
-//     );
-//   }
-// }
-
 class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({Key key}) : super(key: key);
 
   @override
   _HomePageState createState() => _HomePageState();
 }
 
 class _HomePageState extends State<HomePage> {
-  // This holds a list of fiction users
-  // You can use data fetched from a database or a server as well
   final List<Map<String, dynamic>> _allUsers = [
-    {"id": 1, "name": "First movie", "age": 2019},
-    {"id": 2, "name": "Second movie", "age": 2020},
-    {"id": 3, "name": "Third movie", "age": 2021},
-    {"id": 4, "name": "Forth movie", "age": 2022},
+    {"id": 1, "name": "Shawshank Redemption", "age": 1994, "genre": "Drama"},
+    {"id": 2, "name": "Leon", "age": 1994, "genre": "Drama"},
+    {"id": 3, "name": "Call Me By Your Name", "age": 2017, "genre": "Drama"},
+    {"id": 4, "name": "Coco", "age": 2017, "genre": "Animation"},
   ];
 
-  // This list holds the data for the list view
   List<Map<String, dynamic>> _foundUsers = [];
   @override
   initState() {
-    // at the beginning, all users are shown
     _foundUsers = _allUsers;
     super.initState();
   }
 
-  // This function is called whenever the text field changes
   void _runFilter(String enteredKeyword) {
     List<Map<String, dynamic>> results = [];
     if (enteredKeyword.isEmpty) {
-      // if the search field is empty or only contains white-space, we'll display all users
       results = _allUsers;
     } else {
       results = _allUsers
