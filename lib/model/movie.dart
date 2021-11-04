@@ -30,6 +30,16 @@ final movieList = [
       year: '2019',
       duration: '181 min'),
   Movie(
+      id: 'tt6751668',
+      title: 'Parasite',
+      imageUrl:
+          'https://m.media-amazon.com/images/M/MV5BYWZjMjk3ZTItODQ2ZC00NTY5LWE0ZDYtZTI3MjcwN2Q5NTVkXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_.jpg',
+      description:
+          'Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.',
+      rating: '8.6',
+      year: '2019',
+      duration: '132 min'),
+  Movie(
       id: 'tt7286456',
       title: 'Joker',
       imageUrl:
