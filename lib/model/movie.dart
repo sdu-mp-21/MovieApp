@@ -175,4 +175,14 @@ final bestMovieList = [
       rating: '8.1',
       year: '2019',
       duration: '100 min'),
+  Movie(
+      id: 'tt8228288',
+      title: 'The Platform',
+      imageUrl:
+          'https://m.media-amazon.com/images/M/MV5BNzAxYmQzYmYtYjEzYS00ZTFkLWE3NjUtODhjOTQzM2U5ZWI1XkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_.jpg',
+      description:
+          'A vertical prison with one cell per level. Two people per cell. Only one food platform and two minutes per day to feed. An endless nightmare trapped in The Hole.',
+      rating: '7.0',
+      year: '2019',
+      duration: '134 min'),
 ];
