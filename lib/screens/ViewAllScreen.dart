@@ -73,6 +73,15 @@ class ViewAllScreen extends StatelessWidget {
                 itemBuilder: (ctx, i) => VerticalListItem(i),
               ),
             ),
+            Container(
+              height: 500,
+              padding: const EdgeInsets.symmetric(horizontal: 10),
+              child: ListView.builder(
+                physics: NeverScrollableScrollPhysics(),
+                itemCount: topRatedMovieList.length,
+                itemBuilder: (ctx, i) => TopRatedListItem(i),
+              ),
+            ),
             SizedBox(
               height: 30,
             ),

@@ -12,10 +12,14 @@ import '../widget/top_rated_list_item.dart';
 import '../widget/vertical_list_item.dart';
 import '../widget/horizontal_list_item.dart';
 
+import 'NavBar.dart';
+import 'batman.dart';
+
 class DashboardScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: NavBar(),
       appBar: AppBar(
         title: Text('PopCorn'),
         actions: <Widget>[
@@ -80,8 +84,7 @@ class DashboardScreen extends StatelessWidget {
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(
-                            builder: (context) => const ViewAllScreen()),
+                        MaterialPageRoute(builder: (context) => const App()),
                       );
                     },
                   ),
