@@ -5,6 +5,7 @@ import 'package:flutter_movie_app/constants.dart';
 import 'package:flutter_movie_app/widgets/search_bar.dart';
 
 class FavoritesPage extends StatelessWidget {
+   const HomePage({Key key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Container(
