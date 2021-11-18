@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:orilla_fresca_app/helpers/appcolors.dart';
-import 'package:args/args.dart';
-import 'package:crypto/crypto.dart';
+import 'package:flutter_movie_app/screens/constants.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:flutter_movie_app/constants.dart';
+import 'package:flutter_movie_app/widgets/search_bar.dart';
 
 class FavoritesPage extends StatelessWidget {
   @override
