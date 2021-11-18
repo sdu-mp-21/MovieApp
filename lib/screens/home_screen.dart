@@ -38,7 +38,7 @@ class HomeScreen extends StatelessWidget {
                         color: Color.fromRGBO(0, 0, 0, 5),
                         shape: BoxShape.circle,
                       ),
-                      child: SvgPicture.asset("assets/icons/menu.svg"),
+                      child: SvgPicture.asset("../../assets/icons/menu.svg"),
                     ),
                   ),
                   Text("Good Morning, \nNurmukhamed",
@@ -56,18 +56,17 @@ class HomeScreen extends StatelessWidget {
                       children: <Widget>[
                         CategoryCard(
                           title: "Favorites",
-                          svgSrc: "flutter_movie_app/assets/icons/favorite.svg",
+                          svgSrc: "../../assets/icons/favorite.svg",
                           press: () {},
                         ),
                         CategoryCard(
                           title: "My Lists",
-                          svgSrc: "flutter_movie_app/assets/icons/list.svg",
+                          svgSrc: "../../assets/icons/list.svg",
                           press: () {},
                         ),
                         CategoryCard(
                           title: "Watch Lists",
-                          svgSrc:
-                              "flutter_movie_app/assets/icons/watch_list.svg",
+                          svgSrc: "../../assets/icons/watch_list.svg",
                           press: () {
                             Navigator.push(
                               context,
@@ -79,8 +78,7 @@ class HomeScreen extends StatelessWidget {
                         ),
                         CategoryCard(
                           title: "Cast Lists",
-                          svgSrc:
-                              "flutter_movie_app/assets/icons/cast_list.svg",
+                          svgSrc: "../../assets/icons/cast_list.svg",
                           press: () {},
                         ),
                       ],
