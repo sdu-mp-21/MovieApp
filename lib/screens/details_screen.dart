@@ -3,6 +3,7 @@ import 'package:flutter_movie_app/screens/constants.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:flutter_movie_app/constants.dart';
 import 'package:flutter_movie_app/widgets/search_bar.dart';
+import 'NavBar.dart';
 
 class DetailsScreen extends StatelessWidget {
   @override
