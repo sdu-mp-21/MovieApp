@@ -1,19 +1,20 @@
+import 'dart:io';
+
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_movie_app/screens/login_screen.dart';
-import 'package:flutter_movie_app/screens/home_screen.dart';
 
 import '../model/movie.dart';
 import 'login_screen.dart';
 import 'ViewAllScreen.dart';
 import 'search_page.dart';
 import 'genre.dart';
+import 'batman.dart';
 
 import '../widget/top_rated_list_item.dart';
 import '../widget/vertical_list_item.dart';
 import '../widget/horizontal_list_item.dart';
-
 import 'NavBar.dart';
-import 'batman.dart';
+import 'settings.dart';
 
 class DashboardScreen extends StatelessWidget {
   const DashboardScreen({Key key}) : super(key: key);
@@ -48,20 +49,6 @@ class DashboardScreen extends StatelessWidget {
                   color: Colors.white,
                 ),
               )),
-          TextButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const HomeScreen()),
-                );
-              },
-              child: Text(
-                'Home',
-                style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white),
-              ))
         ],
       ),
       body: SingleChildScrollView(
@@ -154,13 +141,7 @@ class DashboardScreen extends StatelessWidget {
                   ),
                   FlatButton(
                     child: Text('View All'),
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const ViewAllScreen()),
-                      );
-                    },
+                    onPressed: () {},
                   ),
                 ],
               ),
