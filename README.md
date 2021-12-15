@@ -34,7 +34,7 @@ The big benefit of building apps with Dart and Flutter is that it is cross-platf
 - Search page
 
 ## Screenshots
-<img src="https://github.com/sdu-mp-21/MovieApp/blob/main/dashboard-screen.png?raw=true" width = "300" height = "300"> <img src = "https://github.com/sdu-mp-21/MovieApp/blob/main/movie-details-screen.png?raw=true" width = "300" height = "300"> 
+<img src="https://github.com/sdu-mp-21/MovieApp/blob/main/dashboard-screen.png?raw=true" width = "300" height = "450"> <img src = "https://github.com/sdu-mp-21/MovieApp/blob/main/movie-details-screen.png?raw=true" width = "300" height = "450"> 
 
 ## Acknowledgements
 
