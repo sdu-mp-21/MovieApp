@@ -12,10 +12,10 @@
 * [Contact](#contact)
 
 ## General Information
-- Provide general information about your project here.
-- What problem does it (intend to) solve?
-- What is the purpose of your project?
-- Why did you undertake it?
+- All of us watch movie. This application is related to movie. 
+- User has profile: can edit profile, follow PTW (plan to watch) list of movies.
+- Application gives user opportunity of search and find movies. It has list of top movies, recommended list, also year movies.
+- Movie detail page gives user opportunity watch trailer and buy now. All of the info about movie.
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 
