@@ -18,8 +18,7 @@
 
 
 ## Technologies Used
-- Dart.
-<br>
+- Dart. <br>
 Dart is used with Flutter to build mobile apps. 
 The big benefit of building apps with Dart and Flutter is that it is cross-platform. It means that you can build an app with just one code base instead of building two separate apps for iPhone and Android.
 
