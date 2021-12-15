@@ -31,8 +31,7 @@ List the ready features here:
 
 ## Acknowledgements
 
-- This project was created for CSS 216 - Mobile Programming course.
-- Many thanks to mentors, students and instructor of the course.
+- Many thanks to mentors, students and instructor of the CSS 216 - Mobile Programming course.
 - Also to all contributors of the project. 
 
 
