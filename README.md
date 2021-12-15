@@ -1,5 +1,7 @@
 # MovieApp
-> Simple mobile application for Android in Dart.
+> Simple mobile application for Android in Dart. 
+> It is created for CSS 216 - Mobile Programming course in which we had to create app in Dart.
+
 
 ## Table of Contents
 * [General Info](#general-information)
