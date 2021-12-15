@@ -4,14 +4,10 @@
 ## Table of Contents
 * [General Info](#general-information)
 * [Technologies Used](#technologies-used)
-* [Features](#features)
+* [Project structure](#structure)
 * [Screenshots](#screenshots)
-* [Project Status](#project-status)
-* [Room for Improvement](#room-for-improvement)
 * [Acknowledgements](#acknowledgements)
 * [Contact](#contact)
-<!-- * [License](#license) -->
-
 
 ## General Information
 - Provide general information about your project here.
