@@ -32,32 +32,18 @@ List the ready features here:
 
 ## Screenshots
 ![Example screenshot](./img/screenshot.png)
-<!-- If you have screenshots you'd like to share, include them here. -->
-
-
-## Setup
-What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
-
-Proceed to describe how to install / setup one's local environment / get started with the project.
-
-
-
-
-## Project Status
-Project is: _in progress_ / _complete_ / _no longer being worked on_. If you are no longer working on it, provide reasons why.
-
-
-- Feature to be added 2
-
 
 ## Acknowledgements
 
-- This project was inspired by...
-- This project was for CSS 216 - Mobile Programming course.
-- Many thanks to 
+- This project was created for CSS 216 - Mobile Programming course.
+- Many thanks to mentors, students and instructor of the course.
+- Also to all contributors of the project. 
 
 
 ## Contact
-Feel free to contact any of contributors if you wanna help for project and contribute together
+
+Do you wanna help?
+
+Feel free to contact any of contributors if you wanna help for project and contribute together, do get in touch.
 
 
