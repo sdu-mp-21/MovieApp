@@ -24,14 +24,11 @@
 ## Technologies Used
 - Dart
 
-
-
-## Features
+## Project structure
 List the ready features here:
 - Awesome feature 1
 - Awesome feature 2
 - Awesome feature 3
-
 
 ## Screenshots
 ![Example screenshot](./img/screenshot.png)
@@ -61,11 +58,6 @@ Project is: _in progress_ / _complete_ / _no longer being worked on_. If you are
 
 
 ## Contact
-Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
+Feel free to contact any of contributors if you wanna help for project and contribute together
 
 
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
-
-<!-- You don't have to include all sections - just the one's relevant to your project -->
