@@ -1,104 +1,123 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_movie_app/screens/registr_screen.dart';
+import 'registr_screen.dart';
 
-import 'package:flutter/material.dart';
-import 'package:login/models/user.dart';
-import 'package:login/services/response/login_response.dart';
-class LoginPage extends StatefulWidget {
-  @override
-  _LoginPageState createState() => new _LoginPageState();
-}
-class _LoginPageState extends State<LoginPage> implements LoginCallBack {
-  BuildContext _ctx;
-  bool _isLoading = false;
-  final formKey = new GlobalKey<FormState>();
-  final scaffoldKey = new GlobalKey<ScaffoldState>();
-  String _username, _password;
-  LoginResponse _response;
-  _LoginPageState() {
-    _response = new LoginResponse(this);
-  }
-  void _submit() {
-    final form = formKey.currentState;
-    if (form.validate()) {
-      setState(() {
-        _isLoading = true;
-        form.save();
-        _response.doLogin(_username, _password);
-      });
-    }
-  }
-  void _showSnackBar(String text) {
-    scaffoldKey.currentState.showSnackBar(new SnackBar(
-      content: new Text(text),
-    ));
-  }
+class LoginScreen extends StatelessWidget {
+  const LoginScreen({Key key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-    _ctx = context;
-    var loginBtn = new RaisedButton(
-      onPressed: _submit,
-      child: new Text("Login"),
-      color: Colors.green,
-    );
-    var loginForm = new Column(
-      crossAxisAlignment: CrossAxisAlignment.center,
-      children: <Widget>[
-        new Form(
-          key: formKey,
-          child: new Column(
-            children: <Widget>[
-              new Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: new TextFormField(
-                  onSaved: (val) => _username = val,
-                  decoration: new InputDecoration(labelText: "Username"),
+    return Scaffold(
+      appBar: AppBar(),
+      body: Padding(
+        padding: const EdgeInsets.all(30),
+        child: Center(
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                Text(
+                  'LOGIN',
+                  style: TextStyle(
+                      fontWeight: FontWeight.w900,
+                      fontSize: 60.0,
+                      color: Colors.blue),
                 ),
-              ),
-              new Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: new TextFormField(
-                  onSaved: (val) => _password = val,
-                  decoration: new InputDecoration(labelText: "Password"),
+                SizedBox(
+                  height: 25,
                 ),
-              )
-            ],
+                TextFormField(
+                  keyboardType: TextInputType.emailAddress,
+                  decoration: InputDecoration(
+                    labelText: 'Email Address',
+                    border: OutlineInputBorder(),
+                    prefixIcon: Icon(Icons.email),
+                  ),
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                TextFormField(
+                  keyboardType: TextInputType.visiblePassword,
+                  obscureText: true,
+                  decoration: const InputDecoration(
+                    labelText: 'Password',
+                    border: OutlineInputBorder(),
+                    prefixIcon: Icon(Icons.lock),
+                    suffixIcon: Icon(Icons.remove_red_eye),
+                  ),
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    TextButton(
+                      onPressed: () {
+                        print('Forgotted Password!');
+                      },
+                      child: Text(
+                        'Forgot Password?',
+                        style: TextStyle(
+                          color: Colors.black.withOpacity(0.4),
+                          fontSize: 12.0,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                SizedBox(
+                  height: 15,
+                ),
+                Container(
+                  clipBehavior: Clip.antiAliasWithSaveLayer,
+                  width: double.infinity,
+                  height: 60,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(100),
+                  ),
+                  child: MaterialButton(
+                    onPressed: () => print("Successul Login."),
+                    color: Colors.blue,
+                    child: Text(
+                      'LOGIN',
+                      style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 30,
+                ),
+                Divider(
+                  color: Colors.black,
+                  height: 30,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      '''Don't have an account? ''',
+                      style: TextStyle(
+                        color: Colors.black.withOpacity(0.5),
+                        fontSize: 16.0,
+                      ),
+                    ),
+                    TextButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const RegistrScreen()),
+                        );
+                      },
+                      child: Text('Register Now'),
+                    )
+                  ],
+                ),
+              ],
+            ),
           ),
         ),
-        loginBtn
-      ],
-    );
-    return new Scaffold(
-      appBar: new AppBar(
-        title: new Text("Login Page"),
-      ),
-      key: scaffoldKey,
-      body: new Container(
-        child: new Center(
-          child: loginForm,
-        ),
       ),
     );
-  }
-  @override
-  void onLoginError(String error) {
-    // TODO: implement onLoginError
-    _showSnackBar(error);
-    setState(() {
-      _isLoading = false;
-    });
-  }
-  @override
-  void onLoginSuccess(User user) async {    
-    if(user != null){
-      Navigator.of(context).pushNamed("/home");
-    }else{
-      // TODO: implement onLoginSuccess
-    _showSnackBar("LOGINNNNNN OLZHAS");
-    setState(() {
-      _isLoading = false;
-    });
-    }
-    
   }
 }
