@@ -1,5 +1,5 @@
 # MovieApp
-> Outline a brief description of your project.
+> Simple mobile application for Android in Dart.
 
 ## Table of Contents
 * [General Info](#general-information)
