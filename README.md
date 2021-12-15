@@ -32,7 +32,7 @@ List the ready features here:
 ## Acknowledgements
 
 - Many thanks to mentors, students and instructor of the CSS 216 - Mobile Programming course.
-- Also to all contributors of the project. 
+- Also to all contributors of the project for working together during term.
 
 
 ## Contact
