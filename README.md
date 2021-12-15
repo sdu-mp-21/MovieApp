@@ -26,14 +26,16 @@ Dart is used with Flutter to build mobile apps.
 The big benefit of building apps with Dart and Flutter is that it is cross-platform. It means that you can build an app with just one code base instead of building two separate apps for iPhone and Android.
 
 ## Project structure
-List the ready features here:
-- Awesome feature 1
-- Awesome feature 2
-- Awesome feature 3
+
+- Login/registration page
+- Main page 
+- Movie detail page 
+- Profile page
+- Search page
 
 ## Screenshots
-<img src="https://github.com/sdu-mp-21/MovieApp/blob/main/dashboard-screen.png?raw=true">
-<img src = "https://github.com/sdu-mp-21/MovieApp/blob/main/movie-details-screen.png?raw=true">
+<img src="https://github.com/sdu-mp-21/MovieApp/blob/main/dashboard-screen.png?raw=true" width = "150" height = "300">
+<img src = "https://github.com/sdu-mp-21/MovieApp/blob/main/movie-details-screen.png?raw=true" width = "150" height = "300"> 
 
 ## Acknowledgements
 
