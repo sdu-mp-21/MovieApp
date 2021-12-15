@@ -32,7 +32,7 @@ List the ready features here:
 - Awesome feature 3
 
 ## Screenshots
-![Example screenshot](./img/screenshot.png)
+https://github.com/sdu-mp-21/MovieApp/blob/main/dashboard-screen.png?raw=true
 
 ## Acknowledgements
 
