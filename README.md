@@ -5,11 +5,14 @@
 
 ## Table of Contents
 * [General Info](#general-information)
+* [Contact](#Goal)
 * [Technologies Used](#technologies-used)
 * [Project structure](#structure)
 * [Screenshots](#screenshots)
+* [Acceptance Criteria](#criteria)
 * [Acknowledgements](#acknowledgements)
 * [Contact](#contact)
+
 
 ## General Information
 - All of us watch movie. This application is related to movie. 
@@ -18,6 +21,8 @@
 - Movie detail page gives user opportunity watch trailer and buy now. All of the info about movie.
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
+## Goal
+Make watching movies more comfortable with this app
 
 ## Technologies Used
 - Dart. <br>
@@ -35,6 +40,10 @@ The big benefit of building apps with Dart and Flutter is that it is cross-platf
 
 ## Screenshots
 <img src="https://github.com/sdu-mp-21/MovieApp/blob/main/dashboard-screen.png?raw=true" width = "270" height = "450"> <img src = "https://github.com/sdu-mp-21/MovieApp/blob/main/movie-details-screen.png?raw=true" width = "270" height = "450"> 
+
+## Acceptance Criteria
+Developing application on Dart flutter
+Every week we trying to modify and upgrade our project according to CSS 216 Mobile Programming course and our instructor Bissenbay Dauletbayev
 
 ## Acknowledgements
 
